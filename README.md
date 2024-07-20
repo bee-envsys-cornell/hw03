@@ -1,18 +1,19 @@
-# Homework 3: Sea-Level Rise Uncertainty and Uncertainty Propagation
+# Homework 3: Dissolved Oxygen and Monte Carlo
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the repository for Homework 3 for [BEE 4750](https://viveks.me/environmental-systems-analysis), taught at [Cornell University](https://cornell.edu) in Fall 2023 by [Vivek Srikrishnan](https://viveks.me).
+This is the repository for Homework 3 for [BEE 4750](https://viveks.me/environmental-systems-analysis), taught at [Cornell University](https://cornell.edu) in Fall 2024 by [Vivek Srikrishnan](https://viveks.me).
 
-If enrolled in the class, a PDF of the completed notebook, **with all cells evaluated**, should be submitted to Gradescope *no later* than Friday, October 6, 2023, at 9:00pm. 10% will be deducted for each day that the notebook is late.
+If enrolled in the class, a PDF of the completed notebook, **with all cells evaluated**, should be submitted to Gradescope *no later* than Thursday, October 3, 2024, at 9:00pm. Submissions will be accepted up to 24 hours late with a 50% penalty.
 
 ## Learning Objectives
 
 After completing this lab, students will be able to:
 
-- sample uncertainties from a probability distribution and propagate them through chained simulation models;
-- compute and interpret quantiles of distributions of model outputs;
-- quantify how uncertain changes to environmental systems can impact infrastructure reliability.
+- use a systems model to analyze the impact of multiple waste discharges on regulatory compliance;
+- determine waste management strategies based on simulation results;
+- reason about responsibility for managing complex environmental impacts;
+- (*BEE 5750*) incorporate simulation outputs into system design strategies to ensure compliance.
 
 ## Repository Overview
 
@@ -28,7 +29,7 @@ The repository consists of the following files:
 
 ## Dependencies
 
-This notebook was written using Julia 1.9.2, and depends on the following packages:
+This notebook was written using Julia 1.10.4, and depends on the following packages:
 - `Plots.jl`
 - `LaTeXStrings.jl`
 - `Distributions.jl`
@@ -36,7 +37,7 @@ This notebook was written using Julia 1.9.2, and depends on the following packag
 
 ## Prerequisites
 
-1. [Install Julia](https://julialang.org/downloads/) before beginning this lab. This notebook was developed with version 1.9.2, but any 1.9.x should work (there could be some issues with other versions, depending on what's changed).
+1. [Install Julia](https://julialang.org/downloads/) before beginning this lab. This notebook was developed with version 1.10.4, but any 1.10.x should work (there could be some issues with other versions, depending on what's changed).
 2. If necessary, [install git](https://happygitwithr.com/install-git.html) and [create a GitHub account](https://github.com). 
 3. [Clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). I recommend doing this in a dedicated `BEE4750/` folder, which can also house homework assignment repositories and lecture notes. You can clone directly into the `BEE4750/` folder.   For Windows (or from another graphical interface), just create a `BEE4750` folder, then a `hw` folder inside of that, then clone into that folder. Or to clone into a `BEE4750/hw` folder, from a command prompt:
     ```bash
@@ -55,7 +56,7 @@ This notebook was written using Julia 1.9.2, and depends on the following packag
   - If you installed VS Code, you should be able to just open `hw03.ipynb` and everything should just work. 
   - If you're using a different IDE, Google how to make sure that it is set up to run a Julia notebook.
   - If you want to use `IJulia.jl`, open a Julia prompt. You can do this by:
-    - Using the `Julia-1.9` or equivalent graphical program, type `cd("BEE4750/hw")` or whatever path points to your lab notebook folder;
+    - Using the `Julia-1.10` or equivalent graphical program, type `cd("BEE4750/hw")` or whatever path points to your lab notebook folder;
     - Navigating to your `BEE4750/hw/hw03` folder and typing `julia` to open the prompt.Then:
     
       ```julia
