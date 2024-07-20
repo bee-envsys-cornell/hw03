@@ -87,10 +87,10 @@ If the characteristics of the river inflow and waste discharges are given in @tb
 
 **In this problem**:
 
-1. Plot the dissolved oxygen concentration from the first waste stream to 50m downriver. What is the minimum value in mg/L?
-2. What is the minimum level of treatment (% removal of organic waste) for waste stream 2 that will ensure that the dissolved oxygen concentration never drops below 4 mg/L, assuming that waste stream 1 remains untreated?
-3. If both waste streams are treated equally, what is the minimum level of treatment (% removal of organic waste) for the two sources required to ensure that the dissolved oxygen concentration never drops below 4 mg/L?
-4. Suppose you are responsible for designing a waste treatment plan for discharges into the river, with a regulatory mandate to keep the dissolved oxygen concentration above 4 mg/L. Discuss whether you'd opt to treat waste stream 2 alone or both waste streams equally. What other information might you need to make a conclusion, if any?
+* Plot the dissolved oxygen concentration from the first waste stream to 50m downriver. What is the minimum value in mg/L?
+* What is the minimum level of treatment (% removal of organic waste) for waste stream 2 that will ensure that the dissolved oxygen concentration never drops below 4 mg/L, assuming that waste stream 1 remains untreated?
+* If both waste streams are treated equally, what is the minimum level of treatment (% removal of organic waste) for the two sources required to ensure that the dissolved oxygen concentration never drops below 4 mg/L?
+* Suppose you are responsible for designing a waste treatment plan for discharges into the river, with a regulatory mandate to keep the dissolved oxygen concentration above 4 mg/L. Discuss whether you'd opt to treat waste stream 2 alone or both waste streams equally. What other information might you need to make a conclusion, if any?
 
 :::
 
@@ -101,8 +101,8 @@ Suppose that it is known that the DO concentrations at the river inflow and the 
 
 **In this problem**:
 
-1. Use Monte Carlo simulation to compute the expected minimum dissolved oxygen concentration and its 95% confidence interval with the treatment strategy that you selected in Problem 1. 
-2. Using your Monte Carlo simulations, what is the probability that the river fails to remain compliant with the regulatory standard? Is this what you expected? Why or why not?
+* Use Monte Carlo simulation to compute the expected minimum dissolved oxygen concentration and its 95% confidence interval with the treatment strategy that you selected in Problem 1. 
+* Using your Monte Carlo simulations, what is the probability that the river fails to remain compliant with the regulatory standard? Is this what you expected? Why or why not?
 
 :::
 
@@ -111,15 +111,11 @@ Suppose that it is known that the DO concentrations at the river inflow and the 
 
 **This problem is only required for students in BEE 5750**.
 
-Suppose that the uncertainties in Problem 3 are correlated
-
-$$U\frac{dC}{dx}
+A factory is planning a third wastewater discharge into the river downstream of the second plant. This discharge would consist of 5 m^3^/day of wastewater with a dissolved oxygen content of 4.5 mg/L and CBOD and NBOD levels of 50 and 45 mg/L, respectively.
 
 **In this problem**:
 
-1. Using Forward Euler, discretize the dissolved oxygen differential equation.
-2. Write a function to simulate using this discretized equation and plot the . How did you decide what step size to use?
-3. What conclusions can you draw about how the discretized equation performs compared to the exact solution?
+* Assume that the treatment plan you identified in Problem 1 is still in place for the existing discharges. If the third discharge will not be treated, under the original inflow conditions (7.5 mg/L DO), how far downstream from the second discharge does this third discharge need to be placed to keep the river concentration from dropping below 4 mg/L?
 :::
 
 
