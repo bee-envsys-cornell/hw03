@@ -1,5 +1,6 @@
 ---
 title: "BEE 4750 Homework 3: Dissolved Oxygen and Monte Carlo"
+date: last-modified
 format:
     html:        
         warning: true
