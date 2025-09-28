@@ -104,7 +104,7 @@ Implement the Streeter-Phelps (analytic) solution for the dissolved oxygen conce
 
 ### Problem 1.2
 
-Implement a numerically-integrated (discretized) solution for the dissolved oxygen concentration. Using a resolution of 0.5km, conduct a simulation and plot the results on the same axis as the plot from Problem 1.1. How has the minimum value changed? What do you attribute this difference to?
+Implement a numerically-integrated (discretized) solution for the dissolved oxygen concentration. Using a resolution of 0.5km, conduct a simulation and plot the results on the same axis as the plot from Problem 1.1. How has the minimum value changed? What do you attribute this difference to (be specific about the source of the difference(s) in terms of the simulation dynamics, not just that one is a numerical approximation).
 
 :::
 
@@ -112,7 +112,7 @@ Implement a numerically-integrated (discretized) solution for the dissolved oxyg
 
 ### Problem 1.3
 
-Using the analytic model, what is the minimum level of treatment (% removal of organic waste) for waste stream 1 that will ensure that the dissolved oxygen concentration never drops below 4 mg/L, assuming that waste stream 2 remains untreated? How about if only waste stream 2 is treated?
+Using the analytic model, what is the minimum level of treatment (% removal of organic waste) for waste stream 1 that will ensure that the dissolved oxygen concentration is in compliance with the 4 mg/L standard along with a 10% margin of safety, assuming that waste stream 2 remains untreated? How about if only waste stream 2 is treated?
 
 :::
 
