@@ -112,7 +112,7 @@ Implement a numerically-integrated (discretized) solution for the dissolved oxyg
 
 ### Problem 1.3
 
-Using the analytic model, what is the minimum level of treatment (% removal of organic waste) for waste stream 1 that will ensure that the dissolved oxygen concentration is in compliance with the 4 mg/L standard along with a 10% margin of safety, assuming that waste stream 2 remains untreated? How about if only waste stream 2 is treated?
+Using the analytic model, what is the minimum level of treatment (% removal of organic waste; assume this is equivalent to the same level of reduction of the CBOD and NBOD) for waste stream 1 that will ensure that the dissolved oxygen concentration is in compliance with the 4 mg/L standard along with a 10% margin of safety, assuming that waste stream 2 remains untreated? How about if only waste stream 2 is treated?
 
 :::
 
