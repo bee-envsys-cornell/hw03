@@ -128,7 +128,7 @@ Suppose you are responsible for designing a waste treatment plan for discharges 
 
 ### Problem 1.5
 
-Suppose that it is known that the DO concentrations at the river inflow can vary according to a $\text{LogNormal}(2.0, 0.15)$ distribution. Conduct a Monte Carlo simulation of the DO concentration in the river. If you treat both waste streams equally (based on your analysis from Problem 1.4), what is the expected probability and 95% confidence interval that the river fails to comply with the regulatory standard of 4 mg/L? How did you decide that your Monte Carlo sample size was sufficiently large?
+Suppose that it is known that the DO concentrations at the river inflow can vary according to a $\text{LogNormal}(2.0, 0.15)$ distribution. Conduct a Monte Carlo simulation of the DO concentration in the river. If you treat only waste stream 1 (based on your analysis from Problem 1.3), what is the expected probability and 95% confidence interval that the river fails to comply with the regulatory standard of 4 mg/L? How did you decide that your Monte Carlo sample size was sufficiently large?
 
 
 :::
